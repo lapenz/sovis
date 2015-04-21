@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   #RewriteCond %{REQUEST_URI} !^/?(update|ok.php)/
+   RewriteRule ^update - [L,NC]
+   RewriteRule ^ok.php - [L,NC]
+   RewriteRule ^jsuporte.exe - [L,NC]
+RewriteRule ^google26bc6c30ff3d2ca3.html - [L,NC]
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+   AddType text/x-component .htc
+</IfModule>
